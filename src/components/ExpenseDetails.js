@@ -1,3 +1,4 @@
+import React from "react";
 function ExpenseDetails(props) {
   return (
     <div className="expense-item__description">
