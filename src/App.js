@@ -33,24 +33,33 @@ function App() {
     },
   ];
 
-  const expenseItems = [];
-
-  for (let i = 0; i < 100; i++) {
-    expenseItems.push(
-      <ExpenseItem
-        key={expenses[i % 4].id + i} // Using modulo to cycle through the expenses array
-        title={expenses[i % 4].title}
-        amount={expenses[i % 4].amount}
-        date={expenses[i % 4].date}
-        LocationOfExpenditure={expenses[i % 4].LocationOfExpenditure}
-      />
-    );
-  }
-
   return (
     <div>
       <h2>Let's get started!</h2>
-      {expenseItems}
+      <ExpenseItem
+        title={expenses[0].title}
+        amount={expenses[0].amount}
+        date={expenses[0].date}
+        LocationOfExpenditure={expenses[0].LocationOfExpenditure}
+      />
+      <ExpenseItem
+        title={expenses[1].title}
+        amount={expenses[1].amount}
+        date={expenses[1].date}
+        LocationOfExpenditure={expenses[1].LocationOfExpenditure}
+      />
+      <ExpenseItem
+        title={expenses[2].title}
+        amount={expenses[2].amount}
+        date={expenses[2].date}
+        LocationOfExpenditure={expenses[2].LocationOfExpenditure}
+      />
+      <ExpenseItem
+        title={expenses[3].title}
+        amount={expenses[3].amount}
+        date={expenses[3].date}
+        LocationOfExpenditure={expenses[3].LocationOfExpenditure}
+      />
     </div>
   );
 }
